@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Just You 💗</title>
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+  margin:0;
+  padding:0;
+  background: linear-gradient(135deg, #ffe6f2, #ffd1dc);
+  font-family: 'Zen Maru Gothic', cursive;
+  text-align:center;
+  overflow:hidden;
+}
+.container {
+  padding:40px;
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+h1 {
+  font-family: 'Potta One', cursive;
+  font-size: 2.5em;
+  color:#ff4f8b;
+  animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+  0% {transform:translateY(0);}
+  50% {transform:translateY(-10px);}
+  100% {transform:translateY(0);}
+}
+p {
+  font-size:1.2em;
+  color:#333;
+  padding:10px 20px;
+}
+a.button {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#ff7bbf;
+  color:white;
+  text-decoration:none;
+  border-radius:20px;
+  font-size:1.2em;
+  box-shadow:0 4px 6px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+a.button:hover {
+  background:#ff4f9a;
+  transform:scale(1.05);
+}
+/* floating hearts */
+.heart {
+  position:absolute;
+  bottom:-10px;
+  color:#ff4f8b;
+  font-size:20px;
+  animation: rise 6s infinite ease-in-out;
+  opacity:0.6;
+}
+@keyframes rise {
+  0% {transform:translateY(0) translateX(0); opacity:0.6;}
+  100% {transform:translateY(-120vh) translateX(20px); opacity:0;}
+}
+</style>
+</head>
+<body>
+<audio autoplay loop>
+  <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/It's_time_for_adventure/Komiku_-_12_-_Friends_Adventures.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+<h1>Just You 💗</h1>
+<p>Everything about you is beautiful in its own way. You’re genuinely one of the best people I know.</p>
+<a class="button" href="page6.html">Next ➜</a>
+</div>
+
+<div class="heart" style="left:10%;">❤</div>
+<div class="heart" style="left:30%; animation-delay:2s;">❤</div>
+<div class="heart" style="left:50%; animation-delay:1s;">❤</div>
+<div class="heart" style="left:70%; animation-delay:3s;">❤</div>
+<div class="heart" style="left:90%; animation-delay:0.5s;">❤</div>
+
+</body>
+</html>
